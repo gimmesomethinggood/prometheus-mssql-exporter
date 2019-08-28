@@ -214,7 +214,6 @@ const metrics = [
     mssql_kill_connection_errors,
     mssql_log_growths,
     mssql_page_life_expectancy,
-    mssql_io_stall,
     mssql_batch_requests,
     mssql_os_process_memory,
     mssql_os_sys_memory
