@@ -114,6 +114,8 @@ FROM sys.dm_os_performance_counters with (nolock)where counter_name='Page life e
     }
 };
 
+/*
+//Not compatible with SQL Server 2012
 const mssql_io_stall = {
     metrics: {
         mssql_io_stall: new client.Gauge({name: 'mssql_io_stall', help: 'Wait time (ms) of stall since last restart', labelNames: ['database', 'type']}),
@@ -148,6 +150,7 @@ group by a.database_id`,
         }
     }
 };
+*/
 
 const mssql_batch_requests = {
     metrics: {
